@@ -1,0 +1,15 @@
+<h1>Orders</h1>
+
+<p><%= @order.first_name %></p>
+<p><%= @order.last_name %></p>
+<p><%= @order.topping %></p>
+<p><%= @order.quantity %></p>
+
+<form method="get" action="/pizza-orders/<%=@order.id%>/edit">
+  <input type="submit" value="Edit Order"/>
+  </form>
+
+<form method="post" action="/pizza-orders/<%=@order.id%>/delete">
+  <input type="submit" value="Delete Order"/>
+
+</form>
